@@ -1,0 +1,16 @@
+# Environment and credentials
+.env
+*.json
+
+# Database files
+*.db
+
+# Python artifacts
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# IDE and OS files
+.DS_Store
+Thumbs.db 
