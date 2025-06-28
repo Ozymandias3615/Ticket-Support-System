@@ -1723,4 +1723,6 @@ if __name__ == '__main__':
                     (s['slug'], s['title'], s['description'], s['icon'], s['color'])
                 )
         db.commit()
-    app.run(debug=True, port=5050)
+    # Use PORT environment variable for Render deployment
+    port = int(os.environ.get('PORT', 5050))
+    app.run(host='0.0.0.0', port=port, debug=False)
